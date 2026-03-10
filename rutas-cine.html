@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas de Cine - Conoce Cáceres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+        <label for="dark-mode-toggle" class="dark-mode-btn" title="Alternar Modo Oscuro">🌙</label>
+
+        <h1> Conoce Cáceres </h1>
+
+        <div class="top-bar">
+            <img src="img/logo.png" alt="Conoce Cáceres Logo">
+
+            <select>
+                <option>ES</option>
+                <option>EN</option>
+                <option>FR</option>
+            </select>
+
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-btn">&#9776; Menú</label>
+    <nav class="mobile-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Categorías</h2>
+            <ul>
+                <li><a href="arquitectura.html">Arquitectura</a></li>
+                <li><a href="naturaleza.html">Naturaleza</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="recreacion.html">Recreación</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="eventos.html">Eventos y Fiestas</a></li>
+                <li><a href="rutas-cine.html" style="font-weight: bold; color: var(--primary);">Rutas de Cine</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <h2>Cáceres: Un Plató de Hollywood</h2>
+            <p>Debido a su excepcional estado de conservación, un simple paseo por el Casco Histórico es adentrarse en
+                un inmenso estudio cinematográfico al aire libre sin cables, farolas modernas ni antenas.</p>
+
+            <h3>Juego de Tronos (Game of Thrones)</h3>
+            <p>Cáceres fue elegida como la imponente ciudad de <strong>Desembarco del Rey</strong> en la séptima
+                temporada. Lugares como la Plaza de Santa María, la Cuesta de la Compañía o la Torre de los Púlpitos
+                fueron clave en el rodaje.</p>
+
+            <h3>La Casa del Dragón (House of the Dragon)</h3>
+            <p>La exitosa precuela regresó a Cáceres, convirtiendo de nuevo sus plazas, como la Plaza de San Jorge o la
+                calle de la Amargura, en el vibrante centro de Poniente y el hogar de la Casa Targaryen.</p>
+
+            <div class="carousel carousel-3">
+                <div class="carousel-inner">
+                    <img src="img/juego-de-tronos-1.jpg" alt="Juego de Tronos 1">
+                    <img src="img/juego-de-tronos-2.jpg" alt="Juego de Tronos 2">
+                    <img src="img/juego-de-tronos-3.jpg" alt="Juego de Tronos 3">
+                </div>
+            </div>
+
+            <h3>Otras Producciones Históricas</h3>
+            <ul>
+                <li><strong>Isabel (Serie de TV):</strong> Las intrigas y batallas de la Reina de Castilla se filmaron
+                    entre estos muros góticos y renacentistas.</li>
+                <li><strong>Inés del Alma Mía:</strong> Adaptación de la novela que utilizó los palacios y cuesta
+                    cacereña.</li>
+                <li><strong>1492: La conquista del paraíso:</strong> Ridley Scott supo ver hace muchos años el potencial
+                    histórico de la ciudad para grabar su epopeya sobre el descubrimiento de América.</li>
+            </ul>
+        </section>
+
+        <aside>
+            <h2>El Trono de Hierro</h2>
+            <img src="img/juego-de-tronos-2.jpg" alt="Dragones en Cáceres"
+                style="width:100%; border-radius: 8px; margin-bottom: 10px;">
+            <p style="font-size: 0.9em;">A menudo se organizan rutas turísticas teatralizadas en las que puedes
+                descubrir anécdotas del rodaje de la aclamada serie de HBO.</p>
+        </aside>
+    </main>
+
+    <footer>
+        Dirección • Información • Sugerencias
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Interactivo - Conoce Cáceres</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+
+  <header>
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+    <label for="dark-mode-toggle" class="dark-mode-btn" title="Alternar Modo Oscuro">🌙</label>
+
+    <h1>Mapa del sitio</h1>
+
+    <div class="top-bar">
+      <img src="img/logo.png" alt="Conoce Cáceres Logo">
+
+      <select>
+        <option>ES</option>
+        <option>EN</option>
+        <option>FR</option>
+      </select>
+
+      <input type="text" placeholder="Buscar...">
+      <button>Buscar</button>
+    </div>
+  </header>
+
+  <nav class="desktop-nav">
+    <a href="index.html">Inicio</a>
+    <a href="atractivos.html">Atractivos</a>
+    <a href="rutas.html">Rutas</a>
+    <a href="planifica.html">Planifica</a>
+    <a href="galeria.html">Galería</a>
+    <a href="#">Mapa</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+  <label for="menu-toggle" class="menu-btn">&#9776; Menú</label>
+  <nav class="mobile-nav">
+    <a href="index.html">Inicio</a>
+    <a href="atractivos.html">Atractivos</a>
+    <a href="rutas.html">Rutas</a>
+    <a href="planifica.html">Planifica</a>
+    <a href="galeria.html">Galería</a>
+    <a href="#">Mapa</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main class="map-split-layout">
+    <div class="map-sidebar">
+      <h2>Lugares Destacados</h2>
+      <div class="map-places-list" id="places-list">
+
+        <div class="place-card">
+          <img src="img/plaza_mayor.png" alt="Plaza Mayor" loading="lazy">
+          <div class="place-card-info">
+            <h3>Plaza Mayor</h3>
+            <p>El punto de encuentro por excelencia y principal puerta de entrada a la ciudad monumental.</p>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="img/torre-bujaco.jpg" alt="Torre de Bujaco" loading="lazy">
+          <div class="place-card-info">
+            <h3>Torre de Bujaco</h3>
+            <p>Símbolo de Cáceres, torre almohade de planta cuadrada del siglo XII.</p>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="img/arco-estrella.jpg" alt="Arco de la Estrella" loading="lazy">
+          <div class="place-card-info">
+            <h3>Arco de la Estrella</h3>
+            <p>Puerta principal de entrada al recinto amurallado desde el siglo XV.</p>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="img/concatedral-maria.jpg" alt="Concatedral de Santa María" loading="lazy">
+          <div class="place-card-info">
+            <h3>Concatedral de Santa María</h3>
+            <p>Templo cristiano más importante de la ciudad, de estilo románico de transición al gótico.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="map-container">
+      <div id="mapa-interactivo"></div>
+    </div>
+  </main>
+
+  <footer>
+    Dirección • Información • Sugerencias
+  </footer>
+
+  <!-- Pequeña excepción: Inicialización mínima del mapa (Leaflet JS) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Inicializar mapa centrado en Cáceres
+      const map = L.map('mapa-interactivo').setView([39.475, -6.372], 15);
+
+      // 2. Cargar capa visual de CartoDB
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(map);
+
+      // 3. Pequeño ejemplo de pin en la Plaza Mayor
+      L.marker([39.4735, -6.3750]).addTo(map)
+        .bindPopup("<b>Plaza Mayor</b><br>Punto central de Cáceres.")
+        .openPopup();
+    });
+  </script>
+</body>
+
+</html>

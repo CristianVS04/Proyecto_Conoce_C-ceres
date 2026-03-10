@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Sugeridas - Conoce Cáceres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ruta-card {
+            background: var(--surface);
+            border: 1px solid var(--primary);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ruta-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+        <label for="dark-mode-toggle" class="dark-mode-btn" title="Alternar Modo Oscuro">🌙</label>
+
+        <h1> Conoce Cáceres </h1>
+
+        <div class="top-bar">
+            <img src="img/logo.png" alt="Conoce Cáceres Logo">
+
+            <select>
+                <option>ES</option>
+                <option>EN</option>
+                <option>FR</option>
+            </select>
+
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="#" style="color: var(--primary);">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-btn">&#9776; Menú</label>
+    <nav class="mobile-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="#" style="color: var(--primary);">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main style="grid-template-columns: 1fr 300px;">
+
+        <section>
+            <h2>Rutas Recomendadas</h2>
+            <p>Sigue nuestros itinerarios para aprovechar al máximo tu visita, dependiendo del tiempo que tengas
+                disponible.</p>
+
+            <div class="ruta-card">
+                <div class="ruta-header">
+                    <h3>Cáceres en 1 Día (Ruta Exprés)</h3>
+                    <span
+                        style="background: var(--primary); color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold;">Corta
+                        - Mediana</span>
+                </div>
+                <img src="img/vista-general.jpg" alt="Vista General de Cáceres"
+                    style="width:100%; border-radius: 8px; margin-bottom: 15px;">
+                <p>Ideal para aquellos viajeros que están de paso. Entraremos por el Arco de la Estrella, atravesaremos
+                    la Plaza Mayor y pararemos a conocer los exteriores de: la Torre de Bujaco, Concatedral de Santa
+                    María y los exteriores del Palacio de los Golfines de Abajo.</p>
+                <a href="mapa.html" class="btn-link">Ver en mapa</a>
+            </div>
+
+            <div class="ruta-card">
+                <div class="ruta-header">
+                    <h3>Inmersión Total (Fin de semana)</h3>
+                    <span
+                        style="background: #e67e22; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold;">Completa</span>
+                </div>
+                <img src="img/ciudad_monumental.png" alt="Ciudad Monumental"
+                    style="width:100%; border-radius: 8px; margin-bottom: 15px;">
+                <p>Abarca todos los palacios y museos del Casco Histórico. Visita interior a la Torre de las Cigüeñas,
+                    aljibe hispano-árabe, Barrio Judío de San Antonio, y finalizaremos recorriendo parte del Paseo de
+                    Cánovas, la zona más moderna de la ciudad.</p>
+                <a href="mapa.html" class="btn-link">Ver en mapa</a>
+            </div>
+
+            <div class="ruta-card">
+                <div class="ruta-header">
+                    <h3>Ruta Nocturna de Leyendas</h3>
+                    <span
+                        style="background: var(--secondary); color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold;">Noche</span>
+                </div>
+                <img src="img/caceres-noche.jpg" alt="Cáceres de Noche"
+                    style="width:100%; border-radius: 8px; margin-bottom: 15px;">
+                <p>Al caer el sol y encenderse la tenue luz ámbar en la Ciudad Monumental, los guías locales relatan
+                    historias, misterios y leyendas sefardíes, como la de la Mansaborá. Imprescindible.</p>
+                <a href="contacto.html" class="btn-link">Reservar Tour</a>
+            </div>
+        </section>
+
+        <aside>
+            <h2>Consejos de Ruta</h2>
+            <ul style="line-height: 2;">
+                <li>✅ Usa calzado cómodo. El empedrado medieval cansa los pies.</li>
+                <li>✅ Evita tacones por riesgo de tropiezos.</li>
+                <li>✅ Lleva agua en verano. Las temperaturas son muy altas.</li>
+                <li>✅ Carga la batería del móvil, querrás hacer fotos constantemente.</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        Dirección • Información • Sugerencias
+    </footer>
+
+</body>
+
+</html>

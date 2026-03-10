@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conoce Cáceres - Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Pantalla de Bienvenida (Splash Screen) -->
+  <div id="welcome-overlay">
+    <img src="img/logo.png" alt="Conoce Cáceres Logo">
+    <h2>Bienvenido a la joya medieval de Extremadura</h2>
+  </div>
+
+
+
+  <header>
+    <!-- Dark Mode Toggle (CSS Only) -->
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+    <label for="dark-mode-toggle" class="dark-mode-btn" title="Alternar Modo Oscuro">🌙</label>
+
+    <h1> Conoce Cáceres </h1>
+
+    <div class="top-bar">
+      <img src="img/logo.png" alt="Conoce Cáceres Logo">
+
+      <select>
+        <option>ES</option>
+        <option>EN</option>
+        <option>FR</option>
+      </select>
+
+      <input type="text" placeholder="Buscar...">
+      <button>Buscar</button>
+    </div>
+  </header>
+
+  <nav class="desktop-nav">
+    <a href="#">Inicio</a>
+    <a href="atractivos.html">Atractivos</a>
+    <a href="rutas.html">Rutas</a>
+    <a href="planifica.html">Planifica</a>
+    <a href="galeria.html">Galería</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- Mobile Menu Toggle (CSS Only) -->
+  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+  <label for="menu-toggle" class="menu-btn">&#9776; Menú</label>
+  <nav class="mobile-nav">
+    <a href="#">Inicio</a>
+    <a href="atractivos.html">Atractivos</a>
+    <a href="rutas.html">Rutas</a>
+    <a href="planifica.html">Planifica</a>
+    <a href="galeria.html">Galería</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <aside>
+      <h2>Categorías</h2>
+      <ul>
+        <li><a href="arquitectura.html">Arquitectura</a></li>
+        <li><a href="naturaleza.html">Naturaleza</a></li>
+        <li><a href="cultura.html">Cultura</a></li>
+        <li><a href="recreacion.html">Recreación</a></li>
+        <li><a href="gastronomia.html">Gastronomía</a></li>
+        <li><a href="eventos.html">Eventos y Fiestas</a></li>
+        <li><a href="rutas-cine.html">Rutas de Cine</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+      </ul>
+    </aside>
+
+    <section>
+      <!-- Carrusel (CSS Only) -->
+      <div class="carousel carousel-3">
+        <div class="carousel-inner">
+          <img src="img/torre-bujaco.jpg" alt="Torre de Bujaco de Cáceres">
+          <img src="img/torta-del-casar-1.jpg" alt="Torta del Casar">
+          <img src="img/los-barruecos.jpg" alt="Los Barruecos">
+        </div>
+      </div>
+
+      <h2>Bienvenido a Cáceres</h2>
+      <p>Declarada <strong>Ciudad Patrimonio de la Humanidad por la UNESCO</strong> en 1986, Cáceres conserva uno de los
+        conjuntos urbanos de la Edad Media y del Renacimiento más impresionantes y completos de todo el mundo. Sus
+        murallas almohades, calles empedradas, palacios, casonas y torres te harán viajar en el tiempo a una época de
+        caballeros, batallas y leyendas intercontinentales. Descubre la historia viva de Extremadura.</p>
+      <br>
+    </section>
+
+    <section>
+      <h2>Listado de recursos</h2>
+      <p>Descubre los tesoros de nuestra ciudad histórica.</p>
+      <img src="img/aljibe-museo-1.jpg" alt="Aljibe del Museo de Cáceres" style="width:100%; border-radius:5px;">
+      <br><br>
+      <a href="arquitectura.html" class="btn-link" style="margin-top:10px;">Descubrir más de su Arquitectura</a>
+    </section>
+
+    <aside>
+      <h2>Detalle</h2>
+      <img src="img/juego-de-tronos-1.jpg" alt="Rodaje en Cáceres" style="width:100%; border-radius:5px;">
+      <p>Cáceres presume de tener uno de los cascos históricos más bellos del mundo.</p>
+    </aside>
+  </main>
+
+  <footer>
+    Dirección • Información • Sugerencias
+  </footer>
+
+</body>
+
+</html>

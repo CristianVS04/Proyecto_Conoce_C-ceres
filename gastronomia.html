@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía - Conoce Cáceres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Dark Mode Toggle (CSS Only) -->
+        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+        <label for="dark-mode-toggle" class="dark-mode-btn" title="Alternar Modo Oscuro">🌙</label>
+
+        <h1> Conoce Cáceres </h1>
+
+        <div class="top-bar">
+            <img src="img/logo.png" alt="Conoce Cáceres Logo">
+
+            <select>
+                <option>ES</option>
+                <option>EN</option>
+                <option>FR</option>
+            </select>
+
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Mobile Menu Toggle (CSS Only) -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-btn">&#9776; Menú</label>
+    <nav class="mobile-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Categorías</h2>
+            <ul>
+                <li><a href="arquitectura.html">Arquitectura</a></li>
+                <li><a href="naturaleza.html">Naturaleza</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="recreacion.html">Recreación</a></li>
+                <li><a href="gastronomia.html" style="font-weight: bold; color: var(--primary);">Gastronomía</a></li>
+                <li><a href="eventos.html">Eventos y Fiestas</a></li>
+                <li><a href="rutas-cine.html">Rutas de Cine</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <h2>Sabores de la Tierra</h2>
+            <p>La despensa cacereña es rica, intensa y de raíces pastoriles. Cáceres fue Capital Española de la
+                Gastronomía en 2015.</p>
+
+            <div class="carousel carousel-2">
+                <div class="carousel-inner">
+                    <img src="img/torta-del-casar-1.jpg" alt="Torta del Casar 1">
+                    <img src="img/torta-del-casar-2.jpg" alt="Torta del Casar 2">
+                </div>
+            </div>
+            <br>
+
+            <h3>Torta del Casar</h3>
+            <p>El queso estrella. Un queso de oveja de pasta blanda, muy cremoso y de sabor intenso, cuajado con cardo
+                silvestre. Se come destapando la corteza superior y untando su interior.</p>
+
+            <img src="img/migas-extremenas.png" alt="Migas Extremeñas">
+            <h3>Migas Extremeñas</h3>
+            <p>El plato pastoril por excelencia, elaborado con pan candeal, ajo, pimentón de la Vera, panceta y chorizo.
+                A menudo se acompañan con pimientos fritos o incluso uvas.</p>
+
+            <img src="img/cerdo-iberico.png" alt="Cerdo Ibérico">
+            <h3>Cerdo Ibérico</h3>
+            <p>La base de los embutidos locales y de platos tradicionales como la prueba de cerdo. La dehesa extremeña
+                es el hábitat natural donde se cría este animal único.</p>
+
+            <img src="img/pimenton-de-la-vera.png" alt="Pimentón de la Vera">
+            <h3>Pimentón de la Vera</h3>
+            <p>El oro rojo (pimentón) le da ese carácter único a la cocina local. Con su proceso de secado al humo de
+                encina o roble, es un ingrediente indispensable con Denominación de Origen.</p>
+
+        </section>
+
+        <aside>
+            <h2>Destacado</h2>
+            <div
+                style="background: var(--surface); padding: 15px; border-radius: 8px; border: 1px solid var(--primary);">
+                <h3 style="color: var(--primary); font-size: 1.2em; margin-bottom: 10px;">Vinos de la Tierra</h3>
+                <p style="font-size: 0.9em; margin-bottom: 0;">Acompaña tus comidas con la Denominación de Origen
+                    <strong>Ribera del Guadiana</strong>, vinos excelentes que maridan perfectamente con la intensa
+                    gastronomía local.
+                </p>
+                <img src="img/torta-del-casar-2.jpg" alt="Torta del Casar"
+                    style="width:100%; border-radius:5px; margin-top:15px;">
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        Dirección • Información • Sugerencias
+    </footer>
+
+</body>
+
+</html>

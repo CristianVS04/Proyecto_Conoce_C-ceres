@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos y Fiestas - Conoce Cáceres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+        <label for="dark-mode-toggle" class="dark-mode-btn" title="Alternar Modo Oscuro">🌙</label>
+
+        <h1> Conoce Cáceres </h1>
+
+        <div class="top-bar">
+            <img src="img/logo.png" alt="Conoce Cáceres Logo">
+
+            <select>
+                <option>ES</option>
+                <option>EN</option>
+                <option>FR</option>
+            </select>
+
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-btn">&#9776; Menú</label>
+    <nav class="mobile-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="galeria.html">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Categorías</h2>
+            <ul>
+                <li><a href="arquitectura.html">Arquitectura</a></li>
+                <li><a href="naturaleza.html">Naturaleza</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="recreacion.html">Recreación</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="eventos.html" style="font-weight: bold; color: var(--primary);">Eventos y Fiestas</a></li>
+                <li><a href="rutas-cine.html">Rutas de Cine</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <h2>Cáceres en Vivo</h2>
+            <p>La ciudad se transforma a lo largo del año con eventos que atraen a visitantes de todo el mundo.</p>
+
+            <div class="carousel carousel-3">
+                <div class="carousel-inner">
+                    <img src="img/semana-santa-1.jpg" alt="Semana Santa 1">
+                    <img src="img/semana-santa-2.jpg" alt="Semana Santa 2">
+                    <img src="img/semana-santa-3.jpg" alt="Semana Santa 3">
+                </div>
+            </div>
+            <h3>Semana Santa (Marzo/Abril)</h3>
+            <p>Declarada de Interés Turístico Internacional. El contraste de las cofradías desfilando en absoluto
+                silencio por las estrechas calles medievales pone los pelos de punta.</p>
+
+            <div class="carousel carousel-3">
+                <div class="carousel-inner">
+                    <img src="img/san-jorge.jpg" alt="San Jorge 1">
+                    <img src="img/san-jorge-2.jpg" alt="San Jorge 2">
+                    <img src="img/san-jorge-3.jpg" alt="San Jorge 3">
+                </div>
+            </div>
+            <h3>Festividad de San Jorge (23 de abril)</h3>
+            <p>Patrón de la ciudad. La ciudad se llena para presenciar la representación teatral de la leyenda de
+                San Jorge y el dragón, culminando con la quema del dragón.</p>
+
+            <img src="img/womad.jpg" alt="Festival WOMAD">
+            <h3>WOMAD (Mayo)</h3>
+            <p>El Festival del Mundo de las Artes, la Danza y la Música llena las plazas del casco histórico de ritmos
+                globales, talleres y un ambiente multicultural inigualable.</p>
+
+        </section>
+
+        <aside>
+            <h2>Calendario</h2>
+            <ul style="font-size: 0.9em; padding-left: 15px;">
+                <li><strong style="color:var(--primary);">Marzo/Abril:</strong> Semana Santa</li>
+                <li><strong style="color:var(--primary);">Abril:</strong> San Jorge (Patrón)</li>
+                <li><strong style="color:var(--primary);">Mayo:</strong> Festival WOMAD</li>
+                <li><strong style="color:var(--primary);">Junio:</strong> Festival de Teatro Clásico</li>
+                <li><strong style="color:var(--primary);">Noviembre:</strong> Mercado Medieval</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        Dirección • Información • Sugerencias
+    </footer>
+
+</body>
+
+</html>

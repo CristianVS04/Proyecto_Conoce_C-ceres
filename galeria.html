@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Conoce Cáceres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mosaic Galery CSS Pure */
+        .masonry {
+            column-count: 3;
+            column-gap: 20px;
+            margin-top: 30px;
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .masonry-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-md);
+        }
+
+        .masonry-item img {
+            width: 100%;
+            display: block;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 15px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .masonry-item:hover .image-overlay {
+            opacity: 1;
+        }
+
+        @media (max-width: 900px) {
+            .masonry {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .masonry {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+        <label for="dark-mode-toggle" class="dark-mode-btn" title="Alternar Modo Oscuro">🌙</label>
+
+        <h1> Conoce Cáceres </h1>
+
+        <div class="top-bar">
+            <img src="img/logo.png" alt="Conoce Cáceres Logo">
+
+            <select>
+                <option>ES</option>
+                <option>EN</option>
+                <option>FR</option>
+            </select>
+
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="#" style="color: var(--primary);">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-btn">&#9776; Menú</label>
+    <nav class="mobile-nav">
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="planifica.html">Planifica</a>
+        <a href="#" style="color: var(--primary);">Galería</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main style="grid-template-columns: 1fr;">
+
+        <section>
+            <h2 style="text-align: center;">Galería Visual de Cáceres</h2>
+            <p style="text-align: center;">Imágenes que hablan por sí solas. La majestuosidad de la ciudad milenaria.
+            </p>
+
+            <div class="masonry">
+                <!-- Carousels for grouped images -->
+                <div class="masonry-item">
+                    <div class="carousel carousel-2">
+                        <div class="carousel-inner">
+                            <img src="img/aljibe-museo-1.jpg" alt="Aljibe Museo de Cáceres 1">
+                            <img src="img/aljibe-museo-2.jpg" alt="Aljibe Museo de Cáceres 2">
+                        </div>
+                    </div>
+                    <div class="image-overlay">Aljibe Árabe (Museo de las Veletas)</div>
+                </div>
+
+                <div class="masonry-item">
+                    <div class="carousel carousel-3">
+                        <div class="carousel-inner">
+                            <img src="img/juego-de-tronos-1.jpg" alt="Localización Juego de Tronos 1">
+                            <img src="img/juego-de-tronos-2.jpg" alt="Localización Juego de Tronos 2">
+                            <img src="img/juego-de-tronos-3.jpg" alt="Localización Juego de Tronos 3">
+                        </div>
+                    </div>
+                    <div class="image-overlay">Escenarios de Juego de Tronos</div>
+                </div>
+
+                <div class="masonry-item">
+                    <div class="carousel carousel-3">
+                        <div class="carousel-inner">
+                            <img src="img/san-jorge.jpg" alt="Plaza de San Jorge 1">
+                            <img src="img/san-jorge-2.jpg" alt="Plaza de San Jorge 2">
+                            <img src="img/san-jorge-3.jpg" alt="Plaza de San Jorge 3">
+                        </div>
+                    </div>
+                    <div class="image-overlay">Plaza de San Jorge</div>
+                </div>
+
+                <div class="masonry-item">
+                    <div class="carousel carousel-2">
+                        <div class="carousel-inner">
+                            <img src="img/san-pedro.jpg" alt="Iglesia de San Pedro 1">
+                            <img src="img/san-pedro-2.jpg" alt="Iglesia de San Pedro 2">
+                        </div>
+                    </div>
+                    <div class="image-overlay">Iglesia de San Pedro</div>
+                </div>
+
+                <div class="masonry-item">
+                    <div class="carousel carousel-3">
+                        <div class="carousel-inner">
+                            <img src="img/semana-santa-1.jpg" alt="Semana Santa de Cáceres 1">
+                            <img src="img/semana-santa-2.jpg" alt="Semana Santa de Cáceres 2">
+                            <img src="img/semana-santa-3.jpg" alt="Semana Santa de Cáceres 3">
+                        </div>
+                    </div>
+                    <div class="image-overlay">Semana Santa (Interés Turístico Internacional)</div>
+                </div>
+
+                <div class="masonry-item">
+                    <div class="carousel carousel-2">
+                        <div class="carousel-inner">
+                            <img src="img/torta-del-casar-1.jpg" alt="Torta del Casar 1">
+                            <img src="img/torta-del-casar-2.jpg" alt="Torta del Casar 2">
+                        </div>
+                    </div>
+                    <div class="image-overlay">Torta del Casar D.O.P.</div>
+                </div>
+
+                <!-- Single images (original + new) -->
+                <div class="masonry-item">
+                    <img src="img/plaza_mayor.png" alt="Plaza Mayor de día">
+                    <div class="image-overlay">Plaza Mayor de Día</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/plaza_mayor_noche.png" alt="Plaza Mayor de noche">
+                    <div class="image-overlay">Plaza Mayor Iluminada</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/caceres-noche.jpg" alt="Casco antiguo de noche">
+                    <div class="image-overlay">Cáceres Nocturno</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/arco-estrella.jpg" alt="Arco de la Estrella">
+                    <div class="image-overlay">Arco de la Estrella</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/torre-bujaco.jpg" alt="Torre de Bujaco">
+                    <div class="image-overlay">Torre de Bujaco</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/concatedral-maria.jpg" alt="Concatedral de Santa María">
+                    <div class="image-overlay">Concatedral de Santa María</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/palacio-veletas.jpg" alt="Palacio de las Veletas">
+                    <div class="image-overlay">Palacio de las Veletas</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/museo-helga-alvear.jpg" alt="Museo Helga de Alvear">
+                    <div class="image-overlay">Museo de Arte Contemporáneo Helga de Alvear</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/los-barruecos.jpg" alt="Los Barruecos">
+                    <div class="image-overlay">Monumento Natural Los Barruecos</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/naturaleza_monfrague.png" alt="Parque Nacional de Monfragüe">
+                    <div class="image-overlay">Parque Nacional de Monfragüe</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/casa-dragon.jpg" alt="Casa del Dragón">
+                    <div class="image-overlay">Curiosa Casa del Dragón</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/gargola-mono.jpg" alt="Gárgola del Mono">
+                    <div class="image-overlay">Gárgola de la Casa del Mono</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/fundacion-mercedes-calles.jpg" alt="Fundación Mercedes Calles">
+                    <div class="image-overlay">Fundación Mercedes Calles</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/palacio-golfines.jpg" alt="Palacio de los Golfines de Abajo">
+                    <div class="image-overlay">Palacio de los Golfines de Abajo</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/santuario-virgen-montana.jpg" alt="Santuario de la Virgen de la Montaña">
+                    <div class="image-overlay">Santuario Virgen de la Montaña</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/torres-desmochadas.jpg" alt="Torres desmochadas">
+                    <div class="image-overlay">Silueta de Torres Desmochadas</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/parque-principe.jpg" alt="Parque del Príncipe">
+                    <div class="image-overlay">Pulmón Verde: Parque del Príncipe</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/womad.jpg" alt="Festival WOMAD">
+                    <div class="image-overlay">Festival WOMAD en Cáceres</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/vista-general.jpg" alt="Vista general de Cáceres">
+                    <div class="image-overlay">Panorámica de la Ciudad</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/migas-extremenas.png" alt="Migas Extremeñas">
+                    <div class="image-overlay">Gastronomía: Migas Extremeñas</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/pimenton-de-la-vera.png" alt="Pimentón de la Vera">
+                    <div class="image-overlay">Pimentón de la Vera</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/ciudad_monumental.png" alt="Ciudad Monumental">
+                    <div class="image-overlay">Ciudad Monumental (Recinto Amurallado)</div>
+                </div>
+
+                <div class="masonry-item">
+                    <img src="img/curiosidades.png" alt="Curiosidades">
+                    <div class="image-overlay">Detalle de Portada Histórica</div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Dirección • Información • Sugerencias
+    </footer>
+
+</body>
+
+</html>
