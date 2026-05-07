@@ -279,6 +279,39 @@ footer {
   margin-top: 60px;
   font-size: 0.9em;
   letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+.license-icons {
+  display: inline-flex;
+  gap: 5px;
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.license-icons img {
+  height: 18px;
+  width: auto;
+  margin: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 /* ----------- ESTILOS ESPECÍFICOS: CONTACTO ----------- */
@@ -735,3 +768,86 @@ body:has(#dark-mode-toggle:checked) {
     transform: translateX(0);
   }
 }
+
+/* ----------- INFO MOSAIC ----------- */
+.info-mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 40px 40px;
+  max-width: 1400px;
+  margin: -20px auto 0;
+}
+
+.mosaic-item {
+  background: var(--surface);
+  padding: 25px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.mosaic-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 5px;
+  align-self: flex-start;
+}
+
+.mosaic-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 15px;
+}
+
+.mosaic-item p {
+  color: var(--text-muted);
+  font-size: 1em;
+  margin: 0;
+}
+
+.links-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mosaic-link {
+  padding: 12px;
+  background: var(--background);
+  color: var(--secondary) !important;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mosaic-link:hover {
+  background: var(--primary);
+  color: white !important;
+  transform: translateX(5px);
+}
+
+@media (max-width: 1000px) {
+  .info-mosaic {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-mosaic {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

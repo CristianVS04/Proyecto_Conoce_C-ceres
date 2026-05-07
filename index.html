@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conoce Cáceres - Inicio</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -103,20 +106,54 @@
     <section>
       <h2>Listado de recursos</h2>
       <p>Descubre los tesoros de nuestra ciudad histórica.</p>
-      <img src="img/aljibe-museo-1.jpg" alt="Aljibe del Museo de Cáceres" style="width:100%; border-radius:5px;">
+      <img src="img/palacio-veletas.jpg" alt="Palacio de las Veletas" style="width:100%; border-radius:5px;">
       <br><br>
       <a href="arquitectura.html" class="btn-link" style="margin-top:10px;">Descubrir más de su Arquitectura</a>
     </section>
 
-    <aside>
-      <h2>Detalle</h2>
-      <img src="img/juego-de-tronos-1.jpg" alt="Rodaje en Cáceres" style="width:100%; border-radius:5px;">
-      <p>Cáceres presume de tener uno de los cascos históricos más bellos del mundo.</p>
-    </aside>
+
   </main>
 
+  <section class="info-mosaic">
+    <div class="mosaic-item">
+      <h2>Curiosidades</h2>
+      <img src="img/juego-de-tronos-1.jpg" alt="Rodaje en Cáceres">
+      <p>Cáceres ha sido escenario de grandes producciones como <strong>Juego de Tronos</strong> y <strong>La Casa del
+          Dragón</strong>, gracias a su impecable estado de conservación.</p>
+    </div>
+
+    <div class="mosaic-item">
+      <h2>¿Sabías que...?</h2>
+      <img src="img/cigueñas.png" alt="Cigüeñas en Cáceres">
+      <p>Cáceres tiene una de las mayores colonias de cigüeñas blancas de Europa. Sus torres medievales son el hogar
+        perfecto para estas aves emblemáticas.</p>
+    </div>
+
+    <div class="mosaic-item">
+      <h2>Explora más</h2>
+      <div class="links-grid">
+        <a href="galeria.html" class="mosaic-link">Galería Visual</a>
+        <a href="mapa.html" class="mosaic-link">Mapa Turístico</a>
+        <a href="contacto.html" class="mosaic-link">Contacto Directo</a>
+      </div>
+      <p>Descubre cada rincón de la ciudad a tu propio ritmo.</p>
+    </div>
+  </section>
+
   <footer>
-    Dirección • Información • Sugerencias
+    <p>Dirección • Información • Sugerencias</p>
+    <p>
+      <a href="index.html">Conoce Cáceres</a> &copy; 2026 por 
+      <a href="contacto.html">Cristian Valhondo</a>. 
+      Esta obra está bajo una licencia 
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="license noopener noreferrer">CC BY-NC-ND 4.0</a>
+      <span class="license-icons">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND">
+      </span>
+    </p>
   </footer>
 
 </body>
