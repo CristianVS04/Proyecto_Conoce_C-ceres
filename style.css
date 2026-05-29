@@ -102,6 +102,11 @@ header h1 {
   border-color: var(--primary);
 }
 
+.top-bar select option {
+  color: var(--text-main);
+  background-color: var(--surface);
+}
+
 .top-bar button {
   background: var(--primary);
   border: none;
